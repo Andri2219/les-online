@@ -1,0 +1,67 @@
+/* Animasi Background Home*/
+@keyframes float-slow {
+
+    0%,
+    100% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-50px);
+    }
+}
+
+@keyframes float-medium {
+
+    0%,
+    100% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-30px);
+    }
+}
+
+@keyframes float-fast {
+
+    0%,
+    100% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-15px);
+    }
+}
+
+.floating-obj {
+    will-change: transform;
+}
+
+.animate-float-slow {
+    animation: float-slow 7s ease-in-out infinite;
+}
+
+.animate-float-medium {
+    animation: float-medium 5s ease-in-out infinite;
+}
+
+.animate-float-fast {
+    animation: float-fast 3s ease-in-out infinite;
+}
+
+.-z-1 {
+    z-index: -1;
+}
+
+
+
+/* CTA selection*/
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
